@@ -4,11 +4,6 @@ export const Sidebar = () => {
   return (
     <div className="bg-linear-to-b sm:bg-linear-to-b from-amber-900 via-yellow-800 to-amber-950 p-4 sm:p-8 w-full sm:w-[30%] sm:min-h-screen shadow-2xl border-4 border-yellow-300 rounded-lg">
       <div className="bg-linear-to-br from-amber-50 to-yellow-50 rounded-lg p-4 sm:p-6 shadow-inner flex sm:flex-col">
-
-        <h2 className="text-xl sm:text-2xl font-bold text-amber-900 mb-0 sm:mb-8 font-serif text-center tracking-wider hidden sm:block">
-          ✨ Меню ✨
-        </h2>
-
         <nav className="flex gap-2 sm:gap-4 w-full sm:flex-col">
 
       <NavLink 
