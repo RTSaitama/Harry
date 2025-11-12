@@ -34,8 +34,24 @@ export const CharacterDetails = () => {
           <h1 className='text-4xl font-bold text-amber-100 mb-4 font-serif'>{character.name}</h1>
           <div className='w-full space-y-3 text-lg text-amber-200 font-serif'>
             <p><span className='text-amber-300 font-bold'>House:</span> {character.house || 'Unknown'}</p>
-            <p><span className='text-amber-300 font-bold'>Born:</span> {character.yearOfBirth || 'Unknown'}</p>
-            <p><span className='text-amber-300 font-bold'>Actor:</span> {character.actor || 'Unknown'}</p>
+            <p><span className='text-amber-300 font-bold'>Born:</span> {character.yearOfBirth || 'Unknown'} ({character.dateOfBirth})</p>
+            <p>
+  <span className="text-red-600 font-bold drop-shadow-[0_0_2px_rgba(220,20,60,0.8)] mr-1">
+    Ancestry:
+  </span>
+  <span className="italic text-white/90">
+    {character.ancestry || 'Unknown'}
+  </span>
+</p>
+
+            <p>
+              <span className="text-cyan-400 font-extrabold drop-shadow-[0_0_2px_rgba(6,192,239,0.8)] mr-1">
+                Patronus:
+              </span>
+              <span className="italic text-white/90">
+                {character.patronus || 'Unknown'}
+              </span>
+            </p>            <p><span className='text-amber-300 font-bold'>Actor:</span> {character.actor || 'Unknown'}</p>
           </div>
         </div>
       ) : (

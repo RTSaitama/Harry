@@ -17,7 +17,7 @@ export const CharactersList = ({ characters, isLoading }: Props) => {
   const totalPages = Math.ceil(characters.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginatedCharacters = characters.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-
+  
   return (
     <div className="flex flex-col flex-1 overflow-hidden">
       {isLoading ? (

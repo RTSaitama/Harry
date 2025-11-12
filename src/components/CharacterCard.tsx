@@ -17,7 +17,7 @@ export const CharacterCard = ({ character }: CharacterProps) => {
       </div>
       <h2 className='text-xl font-bold text-amber-100 mb-2 font-serif'>{character.name}</h2>
       <p className='text-sm text-amber-200 mb-1 font-serif'>{character.house || 'Unknown House'}</p>
-      <p className='text-xs text-amber-300 font-serif'>Born: {character.yearOfBirth || 'Unknown'}</p>
+      <p className='text-xs text-amber-300 font-serif'>Born: {character.yearOfBirth || 'Unknown'} </p>
     </li>
   )
 }
