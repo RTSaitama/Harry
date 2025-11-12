@@ -35,7 +35,7 @@ export const SpellsList = ({ spells, isLoading }: Props) => {
             <button
               disabled={currentPage === 1}
               onClick={() => setCurrentPage(p => p - 1)}
-              className="px-4 py-2 bg-yellow-400 text-black font-bold rounded disabled:opacity-50 hover:bg-yellow-300 transition"
+              className="px-4 py-2 bg-violet-400 text-black font-bold rounded disabled:opacity-50 hover:bg-violet-200 transition"
             >
               Prev
             </button>
@@ -45,7 +45,7 @@ export const SpellsList = ({ spells, isLoading }: Props) => {
             <button
               disabled={currentPage === totalPages}
               onClick={() => setCurrentPage(p => p + 1)}
-              className="px-4 py-2 bg-yellow-400 text-black font-bold rounded disabled:opacity-50 hover:bg-yellow-300 transition"
+              className="px-4 py-2 bg-violet-400 text-black font-bold rounded disabled:opacity-50 hover:bg-violet-200 transition"
             >
               Next
             </button>
