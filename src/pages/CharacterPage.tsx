@@ -26,7 +26,7 @@ export const CharacterPage = () => {
   }, [id]);
 
   return (
-    <div className='min-h-screen bg-linear-to-b from-amber-950 to-amber-900 flex items-center justify-center p-4'>
+    <div className='min-h-screen bg-linear-to-b from-amber-950 to-amber-900 flex items-center justify-center p-1'>
       {isLoading ? (
         <p className='text-2xl text-amber-100 font-serif'>Loading...</p>
       ) : character ? (
