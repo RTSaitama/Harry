@@ -7,15 +7,17 @@ type CharacterProps = {
 export const CharacterCard = ({ character }: CharacterProps) => {
   
   return (
-    <li key={character.id} className='flex flex-col justify-center items-center text-center m-4 transition-all duration-300 transform hover:scale-105 max-w-[300px]'>
-      <img
-        alt='character avatar'
-        src={character.image || 'unknown.png'}
-        className='w-[250px] h-[250px] object-cover rounded-lg'
-      />
-      <h2>{character.name}</h2>
-      <p>{character.house}</p>
-      <p className='w-[100px]'>{character.yearOfBirth}</p>
+    <li key={character.id} className='flex flex-col justify-center items-center text-center p-4 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl max-w-[300px] bg-linear-to-b from-amber-900 to-amber-950 border-2 border-amber-700 shadow-lg'>
+      <div className='relative w-[250px] h-[250px] mb-3'>
+        <img
+          alt={character.name}
+          src={character.image || 'unknown.png'}
+          className='w-full h-full object-cover rounded-lg border-4 border-amber-600 shadow-inner'
+        />
+      </div>
+      <h2 className='text-xl font-bold text-amber-100 mb-2 font-serif'>{character.name}</h2>
+      <p className='text-sm text-amber-200 mb-1 font-serif'>{character.house || 'Unknown House'}</p>
+      <p className='text-xs text-amber-300 font-serif'>Born: {character.yearOfBirth || 'Unknown'}</p>
     </li>
   )
 }

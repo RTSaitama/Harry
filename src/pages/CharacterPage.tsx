@@ -25,5 +25,17 @@ export const CharacterPage = () => {
     fetchCharacter();
   }, [id]);
 
-  return isLoading ? <p>Loading...</p> : character ? <CharacterCard character={character} /> : <p>Not found</p>;
+  return (
+    <div className='min-h-screen bg-linear-to-b from-amber-950 to-amber-900 flex items-center justify-center p-4'>
+      {isLoading ? (
+        <p className='text-2xl text-amber-100 font-serif'>Loading...</p>
+      ) : character ? (
+        <div className='flex flex-col items-center'>
+          <CharacterCard character={character} />
+        </div>
+      ) : (
+        <p className='text-2xl text-amber-100 font-serif'>Character not found</p>
+      )}
+    </div>
+  );
 };

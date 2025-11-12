@@ -8,7 +8,7 @@ export const NotFoundPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-gray-900 to-black flex items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-b from-purple-900 via-gray-900 to-black flex items-center justify-center p-4">
       {/* Magical background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -19,7 +19,7 @@ export const NotFoundPage: React.FC = () => {
       <div className="relative z-10 text-center">
         {/* Error Code */}
         <div className="mb-8">
-          <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 drop-shadow-lg">
+          <h1 className="text-9xl font-bold text-transparent bg-clip-text bg-linear-to-r from-yellow-400 via-orange-400 to-red-500 drop-shadow-lg">
             404
           </h1>
         </div>
@@ -45,13 +45,13 @@ export const NotFoundPage: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={handleGoHome}
-            className="px-8 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="px-8 py-3 bg-linear-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Return to Hogwarts
           </button>
           <button
             onClick={handleGoBack}
-            className="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg hover:from-purple-500 hover:to-indigo-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="px-8 py-3 bg-linear-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg hover:from-purple-500 hover:to-indigo-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Go Back
           </button>

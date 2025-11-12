@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom"
 
 export const Sidebar = () => {
   return (
-    <div className="bg-gradient-to-b from-amber-900 via-yellow-800 to-amber-950 p-8 w-full max-w-[30%] min-h-screen shadow-2xl border-4 border-yellow-300 rounded-lg">
-      <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-lg p-6 shadow-inner">
+    <div className="bg-linear-to-b from-amber-900 via-yellow-800 to-amber-950 p-8 w-full max-w-[30%] min-h-screen shadow-2xl border-4 border-yellow-300 rounded-lg">
+      <div className="bg-linear-to-br from-amber-50 to-yellow-50 rounded-lg p-6 shadow-inner">
         
         <h2 className="text-2xl font-bold text-amber-900 mb-8 font-serif text-center tracking-wider">
           ✨ Меню ✨

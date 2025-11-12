@@ -25,5 +25,17 @@ export const SpellPage = () => {
     fetchSpell();
   }, [id]);
 
-  return isLoading ? <p>Loading...</p> : spell ? <SpellCard spell={spell} /> : <p>Not found</p>;
+  return (
+    <div className='min-h-screen bg-linear-to-b from-purple-950 to-purple-900 flex items-center justify-center p-4'>
+      {isLoading ? (
+        <p className='text-2xl text-purple-100 font-serif'>Loading...</p>
+      ) : spell ? (
+        <div className='flex flex-col items-center'>
+          <SpellCard spell={spell} />
+        </div>
+      ) : (
+        <p className='text-2xl text-purple-100 font-serif'>Spell not found</p>
+      )}
+    </div>
+  );
 };
