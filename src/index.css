@@ -8,6 +8,12 @@ body{
   text-align: center;
   color:rgb(41.4% 0.112 45.904);
 }
+main{ 
+  background-image: url('hero-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 ul{
   list-style-type: none;
   padding: 0; 
