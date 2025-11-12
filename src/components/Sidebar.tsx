@@ -2,35 +2,35 @@ import { NavLink } from "react-router-dom"
 
 export const Sidebar = () => {
   return (
-    <div className="bg-linear-to-b from-amber-900 via-yellow-800 to-amber-950 p-8 w-full max-w-[30%] min-h-screen shadow-2xl border-4 border-yellow-300 rounded-lg">
-      <div className="bg-linear-to-br from-amber-50 to-yellow-50 rounded-lg p-6 shadow-inner">
-        
-        <h2 className="text-2xl font-bold text-amber-900 mb-8 font-serif text-center tracking-wider">
+    <div className="bg-linear-to-b sm:bg-linear-to-b from-amber-900 via-yellow-800 to-amber-950 p-4 sm:p-8 w-full sm:w-[30%] sm:min-h-screen shadow-2xl border-4 border-yellow-300 rounded-lg">
+      <div className="bg-linear-to-br from-amber-50 to-yellow-50 rounded-lg p-4 sm:p-6 shadow-inner flex sm:flex-col">
+
+        <h2 className="text-xl sm:text-2xl font-bold text-amber-900 mb-0 sm:mb-8 font-serif text-center tracking-wider hidden sm:block">
           ✨ Меню ✨
         </h2>
 
-        <nav className="flex flex-col gap-4">
-       
-          <NavLink 
-            to="/characters"
-            className={({ isActive }) => `bg-white rounded-md p-4 border-2 border-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-md ${isActive ? 'bg-yellow-100 border-yellow-500' : 'hover:bg-yellow-100'}`}
-          >
-            <span className="text-amber-900 font-bold text-lg block text-center">
-              👤 Characters
-            </span>
-          </NavLink>
+        <nav className="flex gap-2 sm:gap-4 w-full sm:flex-col">
 
-          <NavLink 
-            to="/spells"
-            className={({ isActive }) => `bg-white rounded-md p-4 border-2 border-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-md ${isActive ? 'bg-yellow-100 border-yellow-500' : 'hover:bg-yellow-100'}`}
-          >
-            <span className="text-amber-900 font-bold text-lg block text-center">
-              ⚡ Spells
-            </span>
-          </NavLink>
+      <NavLink 
+  to="/characters"
+  className={({ isActive }) => `flex-1 sm:flex-none bg-white rounded-md p-3 sm:p-4 border-2 border-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-md ${isActive ? 'bg-yellow-100 border-yellow-500' : 'hover:bg-yellow-100'}`}
+>
+  <span className="text-amber-900 font-bold text-xs sm:text-lg block text-center line-clamp-2">
+    Characters
+  </span>
+</NavLink>
+
+<NavLink 
+  to="/spells"
+  className={({ isActive }) => `flex-1 sm:flex-none bg-white rounded-md p-3 sm:p-4 border-2 border-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-md ${isActive ? 'bg-yellow-100 border-yellow-500' : 'hover:bg-yellow-100'}`}
+>
+  <span className="text-amber-900 font-bold text-xs sm:text-lg block text-center line-clamp-2">
+    Spells
+  </span>
+</NavLink>
         </nav>
 
-        <div className="mt-8 pt-6 border-t-2 border-yellow-400">
+        <div className="hidden sm:block mt-6 sm:mt-8 pt-4 sm:pt-6 border-t-2 border-yellow-400 w-full">
           <p className="text-amber-800 text-xs italic text-center font-serif">
             "Honeydukes' finest collection"
           </p>
@@ -39,5 +39,3 @@ export const Sidebar = () => {
     </div>
   );
 };
-
- 

@@ -13,11 +13,10 @@ export const CharactersList = ({ characters, isLoading }: Props) => {
       {isLoading ?
         <p>Loading...</p>
         :
-        <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 w-full'>
-          {characters.map((character) => {
-            const { id } = character;
+<ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full justify-items-center'>          {characters.map((character) => {
             return (
-              <NavLink key={character.id} to={`/characters/${id}`}>
+          
+              <NavLink to={`/characters/${character.id}`} state={{ character }}>
                 <CharacterCard character={character} />
               </NavLink>
             )

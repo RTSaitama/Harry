@@ -3,7 +3,7 @@ import App from './App';
 import  type { RouteConfig } from './types/types.ts';
 import { HomePage } from './pages/HomePage.tsx';
 import { CharactersPage } from './pages/CharactersPage.tsx';
-import { CharacterPage } from './pages/CharacterPage.tsx';
+import { CharacterDetails } from './pages/CharacterDetails.tsx';
 import NotFoundPage from './pages/NotFoundPage.tsx';
 import { SpellsPage } from './pages/SpellsPage.tsx';
 import {SpellPage} from './pages/SpellPage.tsx';
@@ -11,7 +11,7 @@ import {SpellPage} from './pages/SpellPage.tsx';
 const mainRouteConfig: RouteConfig[] = [
   { index: true, element: <HomePage /> },
   { path: 'characters', element: <CharactersPage /> },
-  { path: 'characters/:id', element: <CharacterPage /> },
+  { path: 'characters/:id', element: <CharacterDetails /> },
   { path: 'spells', element: <SpellsPage /> },
   { path: 'spells/:id', element: <SpellPage/>}
 ];

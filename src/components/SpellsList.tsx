@@ -12,8 +12,7 @@ export const SpellsList = ({ spells, isLoading }: Props) => {
       {isLoading ?
         <p>Loading...</p>
         :
-        <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 w-full'>
-          {spells.map((spell) => {
+<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full justify-items-center'>          {spells.map((spell) => {
             const { id } = spell;
             return (
               <NavLink key={spell.id} to={`/spells/${id}`}>

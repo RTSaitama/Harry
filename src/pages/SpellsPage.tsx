@@ -21,7 +21,7 @@ export const SpellsPage =() => {
   }, []);
   return (
     <div>
-      <h1>Spells</h1>
+      <h1 className="text-5xl font-bold text-purple-100 mb-8 font-serif text-center py-6 bg-linear-to-r from-purple-900 to-purple-800 rounded-lg shadow-lg">Spells</h1>
       <SpellsList spells={spells} isLoading={isLoading} />
     </div>
   )

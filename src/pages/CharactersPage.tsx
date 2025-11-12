@@ -23,8 +23,8 @@ export const CharactersPage = () => {
 
   return (
     <div>
-      <h1>CharactersPage</h1>
+      <h1 className="text-5xl font-bold text-amber-100 mb-8 font-serif text-center py-6 bg-linear-to-r from-amber-900 to-amber-800 rounded-lg shadow-lg">Characters</h1>
       <CharactersList characters={characters} isLoading={isLoading} />
     </div>
   );
-}
+} 
