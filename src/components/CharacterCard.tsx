@@ -11,7 +11,7 @@ export const CharacterCard = ({ character }: CharacterProps) => {
       <div className='relative w-[250px] h-[250px] mb-3'>
         <img
           alt={character.name}
-          src={character.image || 'unknown.png'}
+          src={character.image || 'unknown.webp'}
           className='w-full h-full object-cover rounded-lg border-4 border-amber-600 shadow-inner'
         />
       </div>
