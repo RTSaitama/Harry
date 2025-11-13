@@ -34,7 +34,7 @@ export const CharacterDetails = () => {
           <h1 className='text-4xl font-bold text-amber-100 mb-4 font-serif'>{character.name}</h1>
           <div className='w-full space-y-3 text-lg text-amber-200 font-serif'>
             <p><span className='text-amber-300 font-bold'>House:</span> {character.house || 'Unknown'}</p>
-            <p><span className='text-amber-300 font-bold'>Born:</span> {character.yearOfBirth || 'Unknown'} ({character.dateOfBirth})</p>
+            <p><span className='text-amber-300 font-bold'>Born{character.yearOfBirth || 'Unknown'} ({character.dateOfBirth})</span></p>
             <p>
   <span className="text-red-600 font-bold drop-shadow-[0_0_2px_rgba(220,20,60,0.8)] mr-1">
     Ancestry:
