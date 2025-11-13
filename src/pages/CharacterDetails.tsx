@@ -30,7 +30,7 @@ export const CharacterDetails = () => {
         <p className='text-2xl text-amber-100 font-serif'>Loading...</p>
       ) : character ? (
         <div className='flex flex-col items-center p-8 rounded-2xl bg-linear-to-b from-amber-900 to-amber-950 border-4 border-amber-600 shadow-2xl max-w-[500px]'>
-          <img alt={character.name} src={character.image || 'unknown.png'} className='w-[350px] h-[350px] object-cover rounded-xl border-4 border-amber-600 mb-6 shadow-lg' />
+          <img alt={character.name} src={character.image || 'unknown.webp'} className='w-[350px] h-[350px] object-cover rounded-xl border-4 border-amber-600 mb-6 shadow-lg' />
           <h1 className='text-4xl font-bold text-amber-100 mb-4 font-serif'>{character.name}</h1>
           <div className='w-full space-y-3 text-lg text-amber-200 font-serif'>
             <p><span className='text-amber-300 font-bold'>House:</span> {character.house || 'Unknown'}</p>
